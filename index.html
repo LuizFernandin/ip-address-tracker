@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <title>Frontend Mentor | IP Address Tracker</title>
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet">
+  
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body onload="load()">
+  <div class="container">
+    
+    <header>
+      <div class="content">
+        <p>IP Address Tracker</p>
+        
+        <form id="some-form" action="#">
+          <input id="ipIpnput" type="text" placeholder="Search for any IP address">
+          <button type="submit">
+            <img src="images/icon-arrow.svg" alt="">
+          </button>
+        </form>
+      </div>
+    </header>
+    
+    <footer id="map"></footer>
+    
+    <section class="wrapper">
+      <div>
+        <p>IP Address</p>
+        <p id="ipResult">192.212.174.101</p>
+      </div>
+      <div class="line"></div>
+      
+      <div>
+        <p>Location</p>
+        <p id="locationResult">Brooklyn, NY</p>
+      </div>
+      <div class="line"></div>
+      
+      <div>
+        <p>Timezone</p>
+        <p id="timeZoneResult">UTC -05:00</p>
+      </div>
+      <div class="line"></div>
+      
+      <div>
+        <p>ISP</p>
+        <p id="ispResult">SpaceX</p>
+      </div>
+    </section>
+</body>
+</html>
+
+<script src="script.js"></script>
